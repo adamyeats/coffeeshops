@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/graphql-server"
+  schedule:
+    interval: weekly
+    day: sunday
+    time: "09:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 99
+  assignees:
+  - xadamy
+- package-ecosystem: gomod
+  directory: "/functions/ingest"
+  schedule:
+    interval: weekly
+    day: sunday
+    time: "09:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 99
+  assignees:
+  - xadamy
