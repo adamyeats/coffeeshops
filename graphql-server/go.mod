@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/99designs/gqlgen v0.17.13
 	github.com/gin-gonic/gin v1.8.1
-	github.com/vektah/gqlparser/v2 v2.4.6
+	github.com/vektah/gqlparser/v2 v2.4.7
 	go.elastic.co/apm/module/apmgin/v2 v2.1.0
 )
 
