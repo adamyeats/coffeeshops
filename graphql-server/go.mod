@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/99designs/gqlgen v0.17.13
-	github.com/elastic/go-elasticsearch/v8 v8.3.0
+	github.com/elastic/go-elasticsearch/v8 v8.4.0
 	github.com/gin-gonic/gin v1.8.1
 	github.com/vektah/gqlparser/v2 v2.4.6
 	go.elastic.co/apm/module/apmelasticsearch/v2 v2.1.0
@@ -14,7 +14,7 @@ require (
 require (
 	github.com/agnivade/levenshtein v1.1.1 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
-	github.com/elastic/elastic-transport-go/v8 v8.0.0-20211216131617-bbee439d559c // indirect
+	github.com/elastic/elastic-transport-go/v8 v8.1.0 // indirect
 	github.com/elastic/go-licenser v0.4.1 // indirect
 	github.com/elastic/go-sysinfo v1.8.1 // indirect
 	github.com/elastic/go-windows v1.0.1 // indirect
