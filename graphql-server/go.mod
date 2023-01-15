@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/99designs/gqlgen v0.17.13
-	github.com/elastic/go-elasticsearch/v8 v8.3.0
+	github.com/elastic/go-elasticsearch/v8 v8.6.0
 	github.com/gin-gonic/gin v1.8.1
 	github.com/vektah/gqlparser/v2 v2.4.6
 	go.elastic.co/apm/module/apmelasticsearch/v2 v2.1.0
