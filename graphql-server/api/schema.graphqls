@@ -1,0 +1,10 @@
+type Coffeeshop {
+  name: String!
+  address: String!
+  latitude: Float!
+  longitude: Float!
+}
+
+type Query {
+  coffeeshops: [Coffeeshop]
+}
