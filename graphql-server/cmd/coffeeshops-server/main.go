@@ -9,13 +9,15 @@ import (
 	"time"
 
 	"github.com/adamyeats/coffeeshops/graphql-server/internal/server"
+	"github.com/adamyeats/coffeeshops/graphql-server/pkg/config"
 )
 
 // main is the entrypoint for the server
+// this is a bit of a mess right now
 func main() {
 	ctx := context.Background()
 
-	srv, err := server.New(ctx, os.Getenv("PORT"))
+	srv, err := server.New(ctx, config.FromEnv())
 
 	if err != nil {
 		panic(err)

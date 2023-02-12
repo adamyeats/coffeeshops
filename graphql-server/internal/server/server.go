@@ -2,12 +2,11 @@ package server
 
 import (
 	"context"
-	"log"
 	"net/http"
 
 	"github.com/adamyeats/coffeeshops/graphql-server/internal/db"
+	"github.com/adamyeats/coffeeshops/graphql-server/pkg/config"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 )
 
 // Server is the main server struct
@@ -18,19 +17,15 @@ type Server struct {
 }
 
 // New creates a new server instance
-func New(ctx context.Context, port string) (*Server, error) {
-	if err := godotenv.Load(); err != nil {
-		log.Print("No .env file found")
-	}
-
+func New(ctx context.Context, config *config.Config) (*Server, error) {
 	r := gin.Default()
 
 	srv := &http.Server{
-		Addr:    ":8080",
+		Addr:    config.Server.Port,
 		Handler: r,
 	}
 
-	db, err := db.New(ctx)
+	db, err := db.New(ctx, config.DB)
 
 	if err != nil {
 		panic(err)
