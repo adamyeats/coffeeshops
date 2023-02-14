@@ -36,9 +36,6 @@ func FromEnv() *Config {
 	// server vars
 	port := os.Getenv("PORT")
 
-	// database vars
-	dbUrl := os.Getenv("DATABASE_URL")
-
 	if len(port) == 0 {
 		// set default port
 		port = "8080"
@@ -49,7 +46,7 @@ func FromEnv() *Config {
 	}
 
 	dbc := &DatabaseConfig{
-		URL: dbUrl,
+		URL: os.Getenv("DATABASE_URL"),
 	}
 
 	return &Config{Server: sc, DB: dbc}
