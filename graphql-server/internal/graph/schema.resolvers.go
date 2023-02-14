@@ -12,7 +12,28 @@ import (
 
 // Coffeeshops is the resolver for the coffeeshops field.
 func (r *queryResolver) Coffeeshops(ctx context.Context) ([]*ent.Coffeeshop, error) {
-	return r.DB.Client.Coffeeshop.Query().All(ctx)
+	resultChan := make(chan []*ent.Coffeeshop)
+	errChan := make(chan error)
+
+	// Start a Goroutine to execute the query asynchronously
+	go func() {
+		coffeeshops, err := r.DB.Client.Coffeeshop.Query().All(ctx)
+
+		if err != nil {
+			errChan <- err
+			return
+		}
+
+		resultChan <- coffeeshops
+	}()
+
+	// Wait for either the query result or an error
+	select {
+	case coffeeshops := <-resultChan:
+		return coffeeshops, nil
+	case err := <-errChan:
+		return nil, err
+	}
 }
 
 // Query returns QueryResolver implementation.
