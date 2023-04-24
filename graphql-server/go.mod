@@ -3,8 +3,8 @@ module github.com/adamyeats/coffeeshops/graphql-server
 go 1.19
 
 require (
-	entgo.io/contrib v0.4.1
-	entgo.io/ent v0.12.1
+	entgo.io/contrib v0.4.4
+	entgo.io/ent v0.12.2
 	github.com/99designs/gqlgen v0.17.30
 	github.com/gin-gonic/gin v1.9.0
 	github.com/hashicorp/go-multierror v1.1.1
