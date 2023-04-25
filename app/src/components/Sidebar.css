@@ -1,0 +1,17 @@
+.Sidebar {
+  background-color: #004113;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 128px 64px;
+  width: 33.33%;
+}
+
+.Sidebar__title {
+  color: #8fda00;
+  font-size: 64px;
+  margin-bottom: 128px;
+}
+
+.Sidebar__title span {
+  color: #FFFFFF;
+}
