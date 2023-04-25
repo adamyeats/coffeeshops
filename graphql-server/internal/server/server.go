@@ -17,8 +17,8 @@ type Server struct {
 	server *http.Server
 }
 
-// New creates a new server instance
-func New(ctx context.Context, config *config.Config) (*Server, error) {
+// NewRouter creates a new Gin router instance
+func NewRouter() *gin.Engine {
 	r := gin.Default()
 
 	// enable CORS
@@ -26,6 +26,13 @@ func New(ctx context.Context, config *config.Config) (*Server, error) {
 	cnf.AllowAllOrigins = true
 
 	r.Use(cors.New(cnf))
+
+	return r
+}
+
+// New creates a new server instance
+func New(ctx context.Context, config *config.Config) (*Server, error) {
+	r := NewRouter()
 
 	srv := &http.Server{
 		Addr:    config.Server.Port,
