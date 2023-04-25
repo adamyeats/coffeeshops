@@ -6,6 +6,7 @@ import (
 
 	"github.com/adamyeats/coffeeshops/graphql-server/internal/db"
 	"github.com/adamyeats/coffeeshops/graphql-server/pkg/config"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,6 +20,12 @@ type Server struct {
 // New creates a new server instance
 func New(ctx context.Context, config *config.Config) (*Server, error) {
 	r := gin.Default()
+
+	// enable CORS
+	cnf := cors.DefaultConfig()
+	cnf.AllowAllOrigins = true
+
+	r.Use(cors.New(cnf))
 
 	srv := &http.Server{
 		Addr:    config.Server.Port,
