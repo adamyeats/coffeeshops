@@ -1,7 +1,7 @@
 ariga.io/atlas v0.10.0 h1:B1aCP6gSDQET6j8ybn7m6MArjQuoLH5d4DQBT+NP5k8=
 ariga.io/atlas v0.10.0/go.mod h1:+TR129FJZ5Lvzms6dvCeGWh1yR6hMvmXBhug4hrNIGk=
-entgo.io/contrib v0.4.4 h1:7pAco0odTsHIBaz/G1z4dzqONnuiIeA8GBtXqXCGz10=
-entgo.io/contrib v0.4.4/go.mod h1:wpZyq2DJgthugFvDBlaqMXj9mV4/9ebyGEn7xlTVQqE=
+entgo.io/contrib v0.4.5 h1:BFaOHwFLE8WZjVJadP0XHCIaxgcC1BAtUvAyw7M/GHk=
+entgo.io/contrib v0.4.5/go.mod h1:wpZyq2DJgthugFvDBlaqMXj9mV4/9ebyGEn7xlTVQqE=
 entgo.io/ent v0.12.2 h1:Ndl/JvCX76xCtUDlrUfMnOKBRodAtxE5yfGYxjbOxmM=
 entgo.io/ent v0.12.2/go.mod h1:OA1Y5bNE8EtlxKv4IyzWwt4jgvGbkoKMcwp668iEKQE=
 github.com/99designs/gqlgen v0.17.30 h1:aRCHdy0mWZ41gdlHctJmR05bi3on3Alj4YNRMBZG5UA=
