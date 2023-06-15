@@ -8,6 +8,7 @@ import (
 	"github.com/adamyeats/coffeeshops/graphql-server/pkg/config"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 )
 
 // Server is the main server struct
@@ -26,6 +27,9 @@ func NewRouter() *gin.Engine {
 	cnf.AllowAllOrigins = true
 
 	r.Use(cors.New(cnf))
+
+	// enable OpenTelemetry
+	r.Use(otelgin.Middleware("coffeeshops-server"))
 
 	return r
 }
