@@ -48,6 +48,7 @@ func New(ctx context.Context, config *config.Config) (*Server, error) {
 	// bind routes
 	r.POST("/graphql", createGraphqlHandler(db))
 	r.GET("/", createPlaygroundHandler())
+	r.GET("/metrics", createPrometheusHandler())
 
 	return &Server{
 		db:     db,
