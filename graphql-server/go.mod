@@ -13,7 +13,7 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/mattn/go-sqlite3 v1.14.17
 	github.com/prometheus/client_golang v1.16.0
-	github.com/vektah/gqlparser/v2 v2.5.5
+	github.com/vektah/gqlparser/v2 v2.5.6
 	github.com/vmihailenco/msgpack/v5 v5.3.5
 	go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin v0.42.0
 	go.opentelemetry.io/otel v1.16.0
