@@ -5,7 +5,7 @@ go 1.19
 require (
 	entgo.io/contrib v0.4.5
 	entgo.io/ent v0.12.4
-	github.com/99designs/gqlgen v0.17.37
+	github.com/99designs/gqlgen v0.17.38
 	github.com/gin-contrib/cors v1.4.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/hashicorp/go-multierror v1.1.1
