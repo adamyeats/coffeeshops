@@ -9,7 +9,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/adamyeats/coffeeshops/graphql-server/internal/o11y"
 	"github.com/adamyeats/coffeeshops/graphql-server/internal/server"
 	"github.com/adamyeats/coffeeshops/graphql-server/pkg/config"
 )
@@ -19,9 +18,6 @@ import (
 func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
-
-	cleanup := o11y.NewTracer()
-	defer cleanup(ctx)
 
 	srv, err := server.New(ctx, config.FromEnv())
 	if err != nil {
