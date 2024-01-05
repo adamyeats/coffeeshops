@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fontsource/fanwood-text": "^4.5.10",
+    "@fontsource/fanwood-text": "^5.0.8",
     "@fontsource/league-spartan": "^4.5.13",
     "graphql": "^16.8.1",
     "mapbox-gl": "^2.14.1",
