@@ -1,10 +1,14 @@
 version: 2
 updates:
-- package-ecosystem: gomod
-  directory: "/graphql-server"
-  schedule:
-    interval: weekly
-    day: sunday
-  open-pull-requests-limit: 99
-  assignees:
-  - adamyeats
+  - package-ecosystem: "gomod"
+    directory: "/graphql-server"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - adamyeats
+  - package-ecosystem: "npm"
+    directory: "/app"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - adamyeats
