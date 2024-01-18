@@ -53,9 +53,9 @@ export const MapSheet: React.FC = () => {
         <NavigationControl position='top-right' />
 
         {data?.coffeeshops?.map(coffeeshop => (
-          <Marker
-            longitude={coffeeshop?.longitude}
-            latitude={coffeeshop?.latitude}
+          coffeeshop && <Marker
+            longitude={coffeeshop.longitude}
+            latitude={coffeeshop.latitude}
             anchor='bottom'
           />
         ))}
