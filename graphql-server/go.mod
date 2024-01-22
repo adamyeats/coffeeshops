@@ -5,7 +5,7 @@ go 1.19
 require (
 	entgo.io/contrib v0.4.5
 	entgo.io/ent v0.12.5
-	github.com/99designs/gqlgen v0.17.42
+	github.com/99designs/gqlgen v0.17.43
 	github.com/gin-contrib/cors v1.5.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/hashicorp/go-multierror v1.1.1
@@ -13,7 +13,7 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/mattn/go-sqlite3 v1.14.19
 	github.com/prometheus/client_golang v1.18.0
-	github.com/vektah/gqlparser/v2 v2.5.10
+	github.com/vektah/gqlparser/v2 v2.5.11
 	github.com/vmihailenco/msgpack/v5 v5.4.1
 	go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin v0.46.1
 	golang.org/x/sync v0.6.0
