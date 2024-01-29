@@ -6,7 +6,7 @@
     "@fontsource/fanwood-text": "^5.0.8",
     "@fontsource/league-spartan": "^5.0.18",
     "graphql": "^16.8.1",
-    "mapbox-gl": "^3.1.0",
+    "mapbox-gl": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-map-gl": "^7.1.7",
