@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/fanwood-text": "^5.0.8",
-    "@fontsource/league-spartan": "^5.0.19",
+    "@fontsource/league-spartan": "^5.0.20",
     "graphql": "^16.8.1",
     "mapbox-gl": "^3.2.0",
     "react": "^18.2.0",
