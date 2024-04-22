@@ -3,7 +3,7 @@ module github.com/adamyeats/coffeeshops/graphql-server
 go 1.19
 
 require (
-	entgo.io/contrib v0.4.5
+	entgo.io/contrib v0.5.0
 	entgo.io/ent v0.13.1
 	github.com/99designs/gqlgen v0.17.45
 	github.com/gin-contrib/cors v1.7.1
