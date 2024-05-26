@@ -1,6 +1,8 @@
 module github.com/adamyeats/coffeeshops/graphql-server
 
-go 1.19
+go 1.21
+
+toolchain go1.22.3
 
 require (
 	entgo.io/contrib v0.4.5
